@@ -8,9 +8,11 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url(img/matriz.jpg);
-    background-position: top center;
-    background-repeat: no-repeat;
+}
+
+.fondo{
+    z-index: -1050;
+    position:absolute;
 }
 
 .grid {
