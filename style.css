@@ -16,6 +16,7 @@ body{
     display: grid;
     grid-template-rows: repeat(2, auto);
     justify-content: center;
+    justify-self: center;
 }
 
 /*barra navegacion*/
@@ -110,6 +111,25 @@ header img{
 header h2{
     color:#7c7c7c;
     font-size: 20px;
+}
+
+.botonhero{
+    margin: 10px;
+    width: 200px;
+    height: 20px;
+    background-color: #ef7f7e;
+    border-radius: 10px;
+    box-shadow: #000;
+    padding: 10px;
+    justify-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boton:hover{
+    box-shadow: 2px 2px 10px #77403f;
+    transition: 80ms;
 }
 
 
@@ -243,6 +263,14 @@ footer{
 (orientation: landscape){}
 /*low resolution tablets, mobiles (landscape)*/
 @media (min-width: 481px) and (max-width: 767px){
+    .grid {
+        width: 481px;
+        display: grid;
+        grid-template-rows: repeat(2, auto);
+        justify-content: center;
+        justify-self: center;
+    }
+    
     .hero{
         border-radius: 20px;
         padding: 30px;
@@ -250,9 +278,9 @@ footer{
         box-shadow: 2px 2px 10px #00000032;
         margin-top: 160px;
         display: grid;
+        grid-template-columns: auto;
         justify-content: center;
         align-items: center;
-        grid-template-columns: 1fr;
         gap: 40px;
     }
 
@@ -274,6 +302,53 @@ footer{
         grid-template-columns: 1fr;
     }
 
+    .card{
+        background-image: url(img/back.png);
+        background-repeat: no-repeat;
+        background-position: top center;
+        border-radius: 20px;
+        border: 3px solid #ef7f7e;
+        padding: 20px;
+        display: grid;
+        grid-template-areas: "titulocard titulocard"
+                                "cardimg botoncard";
+        gap: 20px;
+        text-align: center;
+        justify-content: center;
+        width: 450px;
+    }
+
+    .card h2{
+        grid-area: titulocard;
+        padding: 10px;
+        border-radius: 5px;
+        background-color: #ffffffee;
+        font-family: 'Lobster', cursive;
+        color:#ef7f7e;
+    }
+
+    .card img{
+        grid-area: cardimg;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px  #77403f;
+    }
+
+    .boton{
+        grid-area: botoncard;
+        width: max-content;
+        height: 270px;
+        background-color: #ef7f7e;
+        border-radius: 10px;
+        box-shadow: #000;
+        padding: 10px;
+        justify-self: center;
+        display: flex;
+    }
+    
+    .boton:hover{
+        box-shadow: 2px 2px 10px #77403f;
+        transition: 80ms;
+    }
 
     .tituloproductos{
         grid-area: span 1;
@@ -291,6 +366,7 @@ footer{
         color: #ef7f7e;
         font-size: 40px;
     }
+
     article{
         justify-self: center;
     }
