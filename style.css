@@ -64,7 +64,7 @@ ul{
 }
 
 li{    
-    width: 100px;
+    width: 80px;
 }
 
 /*cierre barra navegacion*/
@@ -88,8 +88,7 @@ header{
     display: grid;
     justify-content: center;
     align-items: center;
-    grid-template-columns: 20% 600px;    
-    gap: 40px;
+    grid-template-columns: 30% 500px;    
 }
 
 header h1{
@@ -234,15 +233,20 @@ section{
 /*footer*/
 
 footer{
+    margin-top: 40px;
     width: 100%;
-    font-size: 9px;
-    color: aliceblue;
-    padding: 10px;
     z-index: 1000;
-    text-align: center;
     bottom: 0;
     background-color: rgba(239, 128, 126, 90%);
 }
+
+footer p{
+    font-size: 10px;
+    color: aliceblue;
+    text-align: center;
+    padding: 10px;
+}
+
 
 /*fin footer*/
 
@@ -270,11 +274,11 @@ footer{
 }
 
 /*low resolution tablets, mobiles (landscape)*/
-@media (min-width: 501px) and (max-width: 1024px){
+@media (min-width: 540px) and (max-width: 1024px){
 
 
     .grid {
-        width: 481px;
+        width: 501px;
         display: grid;
         grid-template-rows: repeat(2, auto);
         justify-content: center;
@@ -305,11 +309,10 @@ footer{
     }
 
     section{
-        padding: 30px;
+        margin:0;
         display: grid;
         justify-content: center;
         gap: 20px;
-        grid-template-columns: 1fr;
     }
 
     .card{
@@ -382,7 +385,7 @@ footer{
     }
 }
 /*smartphones mobiles (portrait)*/
-@media (min-width: 320px) and (max-width: 500px){
+@media (min-width: 320px) and (max-width: 540px){
     
     .grid {
         width: 320px;
@@ -405,6 +408,13 @@ footer{
         gap: 40px;
     }
 
+    header h1{
+        font-family: 'Lobster', cursive;
+        color: aliceblue;
+        font-size: 25px;
+        text-align: center;
+    }
+
     header img{
         justify-self: center;
     }
@@ -415,8 +425,14 @@ footer{
         text-align: center;
     }
 
+    header h2{
+        color:#7c7c7c;
+        font-size: 15px;
+    }
+
     section{
-        padding: 30px;
+        margin: 0;
+        padding: 0px;
         display: grid;
         justify-content: center;
         gap: 20px;
