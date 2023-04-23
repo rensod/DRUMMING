@@ -109,6 +109,16 @@ li{
     grid-area: img7;
 }
 
+.galeria img{
+    filter: grayscale(50%);
+}
+
+.galeria img:hover{
+    filter: grayscale(0%);
+    scale: 110%;
+    transition: 80ms;
+}
+
 /*fin galeria*/
 
 /*header*/
