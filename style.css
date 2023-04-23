@@ -13,10 +13,12 @@ body{
 .fondo{
     z-index: -1050;
     position:absolute;
+    background-image: url(img/matriz.jpg);
+    background-position: top center;
+    background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
     height: 500px;
-    background-image: url(img/matriz.jpg);
 }
 
 .grid {
