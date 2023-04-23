@@ -13,6 +13,10 @@ body{
 .fondo{
     z-index: -1050;
     position:absolute;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 500px;
+    background-image: url(img/matriz.jpg);
 }
 
 .grid {
@@ -70,6 +74,40 @@ li{
 }
 
 /*cierre barra navegacion*/
+
+/*galeria*/
+
+.galeria{
+    margin-top: 150px;
+    display: grid;
+    grid-template-areas:    "img1 img1 img1 img2"
+                            "img5 img6 img4 img2"
+                            "img5 img3 img3 img7";
+}
+
+.img1{
+    grid-area: img1;
+}
+.img2{
+    grid-area: img2;
+}
+.img3{
+    grid-area: img3;
+}
+.img4{
+    grid-area: img4;
+}
+.img5{
+    grid-area: img5;
+}
+.img6{
+    grid-area: img6;
+}
+.img7{
+    grid-area: img7;
+}
+
+/*fin galeria*/
 
 /*header*/
 
@@ -277,8 +315,6 @@ footer p{
 
 /*low resolution tablets, mobiles (landscape)*/
 @media (min-width: 540px) and (max-width: 1024px){
-
-
     .grid {
         width: 501px;
         display: grid;
@@ -388,7 +424,15 @@ footer p{
 }
 /*smartphones mobiles (portrait)*/
 @media (min-width: 320px) and (max-width: 540px){
-    
+    .fondo{
+        z-index: -1050;
+        position:absolute;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 500px;
+        background-image: url(img/matriz.jpg);
+    }
+
     .grid {
         width: 320px;
         display: grid;
