@@ -393,7 +393,7 @@ footer p{
     }
 
     .card{
-        background-image: url(img/back.png);
+        background-image: url(../img/fondo.jpg);
         background-repeat: no-repeat;
         background-position: top center;
         border-radius: 20px;
