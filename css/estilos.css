@@ -22,6 +22,7 @@ height: 300px;
 
 .grid {
     display: grid;
+    width: 70%;
     grid-template-rows: repeat(2, auto);
     justify-content: center;
     justify-self: center;
@@ -235,6 +236,47 @@ header h2{
 
 /*fin header*/
 
+/*pasteleria*/
+
+.pasteleria{
+    box-shadow: 2px 2px 10px #00000032;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    color: aliceblue;
+    padding: 40px;
+    background-color: #ef7f7e;
+}
+
+.pasteleria p{
+    font-size: 20px;
+}
+
+.pasteleria h2{
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Lobster', cursive;
+}
+
+.lista{
+    padding: 30px;
+    border-radius: 10px;
+    background-color: aliceblue;
+    margin-top: 20px;
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 50% 50%;
+}
+
+.lista p{
+    font-weight: 1000;
+    color: #ef7f7e;
+    font-size: 15px;
+}
+
+
+/*fin pasteleria*/
+
 /*productos destacados*/
 
 section{
@@ -383,6 +425,16 @@ footer p{
         color:#7c7c7c;
         font-size: 20px;
         text-align: center;
+    }
+
+    .pasteleria p{
+        font-size: 15px;
+    }
+
+    .lista p{
+        font-weight: 1000;
+        color: #ef7f7e;
+        font-size: 10px;
     }
 
     section{
@@ -554,6 +606,17 @@ footer p{
     header h2{
         color:#7c7c7c;
         font-size: 15px;
+    }
+
+    .pasteleria p{
+        font-size: 15px;
+    }
+    
+
+    .lista p{
+        font-weight: 1000;
+        color: #ef7f7e;
+        font-size: 8px;
     }
 
     section{
