@@ -1,24 +1,26 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/estilos.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link rel="apple-touch-icon" sizes="57x57" href="img/Favicon/android-icon-144x144.png">
     <link rel="apple-touch-icon" sizes="60x60" href="img/Favicon/android-icon-144x144.png/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="img/Favicon/android-icon-144x144.png/apple-icon-72x72.png">
     <link rel="apple-touch-icon" sizes="76x76" href="img/Favicon/android-icon-144x144.png/apple-icon-76x76.png">
     <link rel="apple-touch-icon" sizes="114x114" href="img/Favicon/android-icon-144x144.pngimg/Favicon">
-    <link rel="apple-touch-icon" sizes="120x120" href="img/Favicon/android-icon-144x144.pngimg/Favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="img/Favicon/android-icon-144x144.pngimg/Favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="img/Favicon/android-icon-144x144.pngimg/Favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="img/Favicon/android-icon-144x144.pngimg/Favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="img/Favicon/android-icon-192x192.png">
+    <link rel="apple-touch-icon" sizes="120x120"
+        href="img/Favicon/android-icon-144x144.pngimg/Favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144"
+        href="img/Favicon/android-icon-144x144.pngimg/Favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152"
+        href="img/Favicon/android-icon-144x144.pngimg/Favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180"
+        href="img/Favicon/android-icon-144x144.pngimg/Favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/Favicon/android-icon-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/Favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="img/Favicon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/Favicon/favicon-16x16.png">
@@ -26,82 +28,144 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    <title>Los Conitos - Galería</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&amp;family=Roboto:wght@300;400&&amp;display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/estilos.css" rel="stylesheet">
+
+    <title>LOS CONITOS - GALERIA</title>
+
 </head>
 
 <body>
-    
-    <div class="fondo" id="inicio"></div>
-    
-    <nav>
-        <div class="nav">
-            <div>
-                <a href="index.html"><img src="img/logo.png" alt="logo"></a>
+
+    <nav class="navbar navbar-expand-lg container-fluid sombra-nav">
+        <div class="container py-4 navegacion">
+            <a class="navbar-brand" href="#"><img src="img/logo.png" alt="inicio"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon menuhamb"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav links-nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-light" aria-current="page" href="index.html">INICIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">QUIENES SOMOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">PRODUCTOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="galeria.html">GALERIA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">CONTACTANOS</a>
+                    </li>
+                </ul>
             </div>
-            <ul class="menu">
-                <li><a href="index.html">INICIO</a></li>
-                <li><a href="#galeria">GALERIA</a></li>
-            </ul>
         </div>
     </nav>
 
-    <div class="grid">
+    <header class="container hero text-center text-white">
+        <h1>Mirá todas las cosas ricas que tenemos para vos</h1>
+    </header>
 
-        <div class="herogaleria">
-            <header class="headergaleria">
-                <h1>Mirá todas las cosas ricas que tenemos para vos</h1>
-            </header>
-        </div>
-
-        <div class="galeria">
-            
-            <a class="img1" target="_blank" href="img/img1.jpg">
-                <img src="img/thumb/thumb-01.jpg" alt="Roll de canela" title="Roll de canela">
-                <h3>Roll de canela</h3>
-            </a>
-            
-            <a class="img2" target="_blank" href="img/img2.jpg">
-                <img src="img/thumb/thumb-02.jpg" alt="Alfajor de maicena" title="Alfajor de maicena">
-                <h3>Alfajor de maicena</h3>
-            </a>
-            
-            <a class="img3" target="_blank" href="img/img3.jpg">
-                <img src="img/thumb/thumb-03.jpg" alt="Cookies" title="Cookies">
-                <h3>Cookies</h3>
-            </a>
-            
-            <a class="img4" target="_blank" href="img/img4.jpg">
-                <img src="img/thumb/thumb-04.jpg" alt="Torta de chocolate" title="Torta de chocolate">
-                <h3>Torta de chocolate</h3>
-            </a>
-            
-            <a class="img5" target="_blank" href="img/img5.jpg">
-                <img src="img/thumb/thumb-05.jpg" alt="Tarta de frutilla" title="Tarta de frutilla">
-                <h3>Tarta de frutilla</h3>
-            </a>
-            
-            <a class="img6" target="_blank" href="img/img6.jpg">
-                <img src="img/thumb/thumb-06.jpg" alt="Torta de frutos rojos" title="Torta de frutos rojos">
-                <h3>Torta de frutos rojos</h3>
-            </a>
-            
-            <a class="img7" target="_blank" href="img/img7.jpg">
-                <img src="img/thumb/thumb-07.jpg" alt="Brownie" title="Brownie">
-                <h3>Brownie</h3>
-            </a>
-            
-            <a class="img8" target="_blank" href="img/img8.jpg">
-                <img src="img/thumb/thumb-08.jpg" alt="Croissant" title="Croissant">
-                <h3>Croissant</h3>
-            </a>
+    <section class="container mt-5 d-none d-md-block">
         
-        </div>
+            <h2>
+                Cada uno de nuestros productos representa una combinación perfecta de sabores cautivadores y una técnica
+                artesanal impecable.
+            </h2>
+            <p>Desde deliciosos croissants recién horneados hasta tiernos bollos de canela y pastelillos con rellenos
+            irresistibles, nuestro equipo de expertos panaderos trabaja incansablemente para ofrecerte los más
+            exquisitos manjares.
+        </p>
 
-</div>
+        <p>
+            Nuestra galería de fotos es un escaparate virtual donde puedes explorar visualmente la variedad y la calidad
+            que caracterizan a Los Conitos. Cada imagen captura la belleza de nuestros productos, desde las texturas
+            delicadas hasta los colores vibrantes que los hacen irresistibles. Te invitamos a disfrutar de una
+            experiencia visual única mientras descubres nuestros pasteles decorados con maestría, las tentadoras
+            galletas y las generosas porciones de bizcochos esponjosos.
+        </p>
+    </section>
 
-    <footer>
+    <main class="container d-flex justify-content-center">
+
+        <section class="galeria mt-3 d-flex justify-content-center row row-cols-lg-4 row-cols-sm-1 row-cols-md-2 row-cols-xs-1 seccion text-white">
+
+            <div class="row d-flex justify-content-center">
+                <a class="container d-flex justify-content-center" target="_blank" href="img/img1.jpg">
+                    <img class="img-thumbnail" src="img/thumb/thumb-01.jpg" alt="Roll de canela"
+                        title="Roll de canela"></a>
+                <h3 class="text-white fs-6 text-center">Roll de canela</h3>
+            </div>
+
+            <div class="row d-flex justify-content-center">
+                <a class="container d-flex justify-content-center" target="_blank" href="img/img2.jpg">
+                    <img class="img-thumbnail" src="img/thumb/thumb-02.jpg" alt="Roll de canela"
+                        title="Roll de canela"></a>
+                <h3 class="text-white fs-6 text-center">Alfajor de maicena</h3>
+            </div>
+
+            <div class="row d-flex justify-content-center">
+                <a class="container d-flex justify-content-center" target="_blank" href="img/img3.jpg">
+                    <img class="img-thumbnail" src="img/thumb/thumb-03.jpg" alt="Roll de canela"
+                        title="Roll de canela"></a>
+                <h3 class="text-white fs-6 text-center">Cookies</h3>
+            </div>
+
+            <div class="row d-flex justify-content-center">
+                <a class="container d-flex justify-content-center" target="_blank" href="img/img4.jpg">
+                    <img class="img-thumbnail" src="img/thumb/thumb-04.jpg" alt="Roll de canela"
+                        title="Roll de canela"></a>
+                <h3 class="text-white fs-6 text-center">Torta de chocolate</h3>
+            </div>
+
+            <div class="row d-flex justify-content-center">
+                <a class="container d-flex justify-content-center" target="_blank" href="img/img5.jpg">
+                    <img class="img-thumbnail" src="img/thumb/thumb-05.jpg" alt="Roll de canela"
+                        title="Roll de canela"></a>
+                <h3 class="text-white fs-6 text-center">Tarta de frutilla</h3>
+            </div>
+
+            <div class="row d-flex justify-content-center">
+                <a class="container d-flex justify-content-center" target="_blank" href="img/img6.jpg">
+                    <img class="img-thumbnail" src="img/thumb/thumb-06.jpg" alt="Roll de canela"
+                        title="Roll de canela"></a>
+                <h3 class="text-white fs-6 text-center">Torta de frutos rojos</h3>
+            </div>
+
+            <div class="row d-flex justify-content-center">
+                <a class="container d-flex justify-content-center" target="_blank" href="img/img7.jpg">
+                    <img class="img-thumbnail" src="img/thumb/thumb-07.jpg" alt="Roll de canela"
+                        title="Roll de canela"></a>
+                <h3 class="text-white fs-6 text-center">Brownie</h3>
+            </div>
+            <div class="row d-flexustify-content-center">
+                <a class="container d-flex justify-content-center" target="_blank" href="img/img8.jpg">
+                    <img class="img-thumbnail" src="img/thumb/thumb-08.jpg" alt="Roll de canela"
+                        title="Roll de canela"></a>
+                <h3 class="text-white fs-6 text-center">Croissant</h3>
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <footer class="d-flex justify-content-center align-items-center container-fluid mt-5" style="height: 50px;">
         <p>Autor de este documento: Renso Dantagnan</p>
     </footer>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+
 </body>
 
 </html>
