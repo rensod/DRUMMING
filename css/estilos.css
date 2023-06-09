@@ -10,6 +10,10 @@ body{
     background-position: top;
 }
 
+.margennav{
+    margin-top: 180px;
+}
+
 .navbar{
     top: 0;
     position: fixed;
