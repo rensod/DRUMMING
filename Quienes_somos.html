@@ -1,10 +1,18 @@
 <!DOCTYPE html>
 <html lang="es">
 
+<!-- Web escrita con Boostrap v5.3 -->
+
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Renso Dantagnan">
+    <meta name="description" content="Página donde contamos quienes somos, un breve repaso por nuestra historia">
+
+    <!-- Favicons -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="apple-touch-icon" sizes="57x57" href="img/Favicon/android-icon-144x144.png">
@@ -30,7 +38,10 @@
     <meta name="theme-color" content="#ffffff">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&amp;family=Roboto:wght@300;400&&amp;display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
+
+        <!-- ESTILOS -->
+
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/estilos.css" rel="stylesheet">
 
@@ -39,6 +50,8 @@
 </head>
 
 <body>
+
+    <!-- barra de navegacion -->
 
     <nav class="navbar navbar-expand-lg container-fluid sombra-nav">
         <div class="container py-4">
@@ -70,48 +83,75 @@
         </div>
     </nav>
 
+    <!-- contenido -->
+
     <main  class="container margennav">
 
-        <div>
+            <!-- encabezado -->
 
-            <h2 class="text-white text-center mx-auto col-9 hero lobster">¡Apasionados por lo que hacemos!</h2>
+            <header>
+                <h1 class="container col-9 hero text-center text-white lobster">¡Apasionados por lo que hacemos!</h1>
+            </header>      
+            
+            <!-- seccion quienes somos -->
 
-            <div class="mt-5">
+            <section class="row mt-5">
+
+
                 <div class="row mx-auto">
-                    <p class="fw-semibold">
+                    <!-- bloque texto -->
+                    <h2 class="fw-semibold fs-5 mb-5">
                         En Los Conitos, la pasión por la panadería y la pastelería es el ingrediente secreto que nos
                         impulsa a crear auténticas obras maestras. Nuestro equipo de expertos pasteleros combina habilidad, creatividad y
                         amor por los detalles en cada delicioso bocado que ofrecemos.
-                    </p>
-                    <div class="col-lg-4">
+                    </h2>
+
+                    <!-- articulo 1 -->
+
+                    <article class="col-lg-4 mb-5">
                         <img class="w-100 rounded-5 border shadow p-0 mx-auto my-3" src="img/elavoracion.jpg" alt="Elavoracion">
+                        <h2 class="text-center fs-3 lobster rosa mt-2">Compromiso</h2>
                         <p>
                             Nuestra misión es brindar experiencias excepcionales a través de nuestros productos,
                             y lo hacemos utilizando solo los ingredientes más frescos y de la más alta calidad.
                             Desde nuestros suaves y esponjosos pasteles hasta nuestros croissants
                             crujientes, cada producto es elaborado a mano con dedicación y cuidado.
                         </p>
-                    </div>
-                    <div class="col-lg-4">
+                    </article>
+
+                    <!-- articulo 2 -->
+
+                    <article class="col-lg-4 mb-5">
                         <img class="w-100 rounded-5 border shadow p-0 mx-auto my-3" src="img/clientes.jpg" alt="Clientes">
+                        <h2 class="text-center fs-3 lobster rosa mt-2">Tradición</h2>
                         <p>
                             En Los Conitos, valoramos la fidelidad y el cariño de nuestros clientes.
                             Es por eso que nos esforzamos por mantener viva la tradición familiar que nos ha llevado hasta aquí.
                             Con cada visita, esperamos crear momentos especiales y memorables para aquellos
                             que nos eligen como su destino de confianza para endulzar sus vidas.
                         </p>
-                    </div>
-                    <div class="col-lg-4">
+                    </article>
+
+                    <!-- articulo 3 -->
+
+                    <article class="col-lg-4 mb-5">
                         <img class="w-100 rounded-5 border shadow p-0 mx-auto my-3" src="img/historia.jpg" alt="Historia">
+                        <h2 class="text-center fs-3 lobster rosa mt-2">Historia</h2>
                         <p>
                             Estamos orgullosos de nuestra historia y de las sonrisas que hemos creado a lo largo de los años.
                             Nos emociona compartir nuestro legado con ustedes y seguir siendo un referente en el mundo de la repostería.
                         </p>
-                    </div>            
-                    <p class="col-12 mt-5 text-center fs-4 lobster rosa">¡Los Conitos, donde los sueños se vuelven dulces realidades desde hace 50 años!</p>
+                    </article>            
+
+                    <!-- Bloque texto -->
+                    
+                    <p class="col-12 text-center fs-4 lobster rosa">¡Los Conitos, donde los sueños se vuelven dulces realidades desde hace 50 años!</p>
                     <p class="col-12 text-center rosa fw-semibold">
                         Gracias por visitar nuestro sitio web y por permitirnos ser parte de su experiencia dulce.</p>
                 </div>
+
+                <!-- redes -->
+
                 <div class="row">
                     <p class="text-center rosa fw-semibold">
                     Te invitamos a seguirnos en nuestras redes sociales:</p>
@@ -122,10 +162,12 @@
                     <p class="mt-1 text-center rosa fw-semibold">
                         @losconitos</p>
                 </div>
-            </div>
-        </div>
+
+            </section>
+
     </main>
 
+    <!-- Fin contenido -->
 
     <footer class="container-fluid d-flex justify-content-center align-items-center mt-5" style="height: 50px;">
         <div class="container d-flex align-items-center justify-content-between">
@@ -137,6 +179,7 @@
         </div>
     </footer>
 
+    <!-- JS -->
 
     <script src="js/bootstrap.bundle.min.js"></script>
 
