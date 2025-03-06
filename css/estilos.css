@@ -120,14 +120,14 @@ a{
     flex-direction: column;
     justify-content: start;
     background-color: #5a5a5a;
-    max-width: 32%;
-    min-width: 350px;
+    min-width: 400px;
     height: 500px;
 }
 
 .ediciones p{
     color: #c4c4c4; 
     margin-bottom: auto;
+    font-size: small;
 }
 
 .imgedic{
