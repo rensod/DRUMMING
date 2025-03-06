@@ -109,12 +109,18 @@ a{
     transition: 100ms;
 }
 
+.present{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
 .ediciones{
     display: flex;
     flex-direction: column;
     justify-content: start;
     background-color: #5a5a5a;
-    max-width: 33%;
+    max-width: 32%;
     min-width: 350px;
     height: 500px;
 }
